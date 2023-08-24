@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Animation Showcase</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="interactive-button">Interactive Button</div>
+  <div class="interactive-slider">
+    <div class="slider-thumb"></div>
+  </div>
+  <div class="section-with-pseudo">
+    <h2>::before and ::after Pseudo-Elements</h2>
+  </div>
+  <div class="cube-container">
+    <div class="cube">
+      <div class="cube-face">1</div>
+      <div class="cube-face">2</div>
+      <div class="cube-face">3</div>
+      <div class="cube-face">4</div>
+      <div class="cube-face">5</div>
+      <div class="cube-face">6</div>
+    </div>
+  </div>
+  <div class="custom-cursor"></div>
+  <footer>
+    <p>&copy; 2023 Collins Oden </p>
+  </footer>
+</div>
+
+<script>
+    // Scripts for interactive cursor functionality
+  const customCursor = document.querySelector('.custom-cursor');
+  document.addEventListener('mousemove', (e) => {
+    customCursor.style.left = e.clientX + 'px';
+    customCursor.style.top = e.clientY + 'px';
+  });
+</script>
+</body>
+</html>
